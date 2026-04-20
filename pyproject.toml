@@ -1,0 +1,22 @@
+[project]
+name = "professionalhub"
+version = "0.1.0"
+description = "An in depth collection of all the data and experiences about my career, my knowledge and skills"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "mkdocs-material>=9.7.6",
+]
+
+[dependency-groups]
+dev = [
+ "pre-commit>=4.5.1",
+ "ruff>=0.15.11",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py314"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
