@@ -29,7 +29,7 @@ If you find yourself repeatedly writing the same type of information in the
 Steps to add a new section:
 
 1. Define the section purpose clearly in `docs/PROJECT_CONTEXT.md` under section 5.
-2. Add the corresponding placeholder block to `templates/PROFESSIONAL_HUB.md`.
+2. Add the corresponding placeholder block to `docs/templates/PROFESSIONAL_HUB.md`.
 3. Update the section table in `README.md`.
 4. Update the section count reference anywhere it appears (currently "15 sections").
 5. If the section produces a new output type, add a row to the output table in
@@ -39,7 +39,7 @@ Steps to add a new section:
 
 ## Editing the Template
 
-The template in `templates/PROFESSIONAL_HUB.md` is the blank starting point for all users.
+The template in `docs/templates/PROFESSIONAL_HUB.md` is the blank starting point for all users.
 Keep it:
 
 - **Gentle**: placeholder text should guide, not intimidate. Write prompts, not demands.

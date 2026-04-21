@@ -1,7 +1,7 @@
 site_name: ProfessionalHub
-site_url: https://alessandrokuz.github.io/professionalhub/
 site_description: Documentation for the ProfessionalHub system - a single source of truth for professional identity.
 site_author: Alessandro Kuz
+site_url: https://alessandrokuz.github.io/professionalhub/
 repo_url: https://github.com/alessandrokuz/professionalhub/
 repo_name: ProfessionalHub
 docs_dir: docs
@@ -44,4 +44,10 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Project Context: PROJECT_CONTEXT.md
+  - Documentation:
+      - Project Context: PROJECT_CONTEXT.md
+      - Implementation: IMPLEMENTATION.md
+  - Guides:
+      - Compilation Guide: guides/COMPILATION_GUIDE.md
+      - Output Guide: guides/OUTPUT_GUIDE.md
+  - Template: templates/PROFESSIONAL_HUB.md

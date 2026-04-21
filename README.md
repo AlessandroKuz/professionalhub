@@ -2,7 +2,7 @@
 
 > One document to know yourself. Every output flows from it.
 
-ProfessionalHub is a personal system for managing your professional identity.
+**ProfessionalHub** is a personal system for managing your professional identity.
 The idea is simple: keep one comprehensive, private Markdown document with everything
 about you - your experiences, skills, projects, education, and positioning - and use it
 as the raw material for every CV, cover letter, portfolio, or platform profile you will
@@ -36,17 +36,20 @@ written from scratch, always tailored to the specific audience and context.
 
 ### 1. Copy the template
 
-Grab `templates/PROFESSIONAL_HUB.md` from this repo and place it in a new **private**
-repository of your own. That private repo is where your actual data lives. This repo
-contains only the system, not the data.
+Grab `docs/templates/PROFESSIONAL_HUB.md` from this repo and place it in a new **private**
+repository of your own `professionaldata` is suggested, it should also be a subfolder
+of the main directory (`professionalhub`). That private repo is where your actual
+data lives. This repo contains only the system, not the data.
 
 ### 2. Read the docs
 
 The [documentation site](https://alessandrokuz.github.io/professionalhub/) has everything
 you need to understand the system before you start writing:
 
-- **Project Context** - the full theory and reasoning behind the system
-- **Implementation Guide** - how to use the hub to generate real outputs *(coming soon)*
+- **Project Context**: the full theory and reasoning behind the system
+- **Implementation Guide**: current workflow and planned automation phases
+- **Compilation Guide**: section-by-section help for filling in your hub
+- **Output Guide**: ready-to-use prompt templates for CVs, cover letters, and more
 
 ### 3. Start writing
 
@@ -95,16 +98,23 @@ professionalhub/               # This repo (public)
 ├── mkdocs.yml                 # MkDocs Material configuration
 ├── pyproject.toml             # Python dependencies (managed via uv)
 ├── .pre-commit-config.yaml    # Pre-commit hooks (ruff lint, format, file checks)
-├── templates/
-│   └── PROFESSIONAL_HUB.md   # Blank template - copy this to your private repo
+├── .python-version            # Python version pin (managed via uv)
+├── .github/
+│   └── workflows/
+│       └── docs.yml           # Auto-deploy docs to GitHub Pages
 └── docs/
-    ├── index.md
+    ├── index.md               # Documentation home page
     ├── PROJECT_CONTEXT.md     # Theory and scope of the system
-    └── IMPLEMENTATION.md      # Practical workflow guide (coming soon)
+    ├── IMPLEMENTATION.md      # Practical workflow guide
+    ├── guides/
+    │   ├── COMPILATION_GUIDE.md
+    │   └── OUTPUT_GUIDE.md
+    └── templates/
+        └── PROFESSIONAL_HUB.md   # Blank template: copy this to your private repo
 
 professionaldata/              # Your private repo (not in this repo)
 ├── PROFESSIONAL_HUB.md        # Your actual data
-└── outputs/                   # Generated CVs, cover letters, pitches
+└── outputs/
     ├── cv/
     ├── cover-letters/
     └── pitches/
@@ -114,7 +124,7 @@ professionaldata/              # Your private repo (not in this repo)
 
 ## Documentation
 
-As said above, full documentation is available at:
+Full documentation is available at:
 **[alessandrokuz.github.io/professionalhub/](https://alessandrokuz.github.io/professionalhub/)**
 
 To run the docs locally:
@@ -133,9 +143,9 @@ uv run mkdocs serve --livereload
 
 ## Future Plans
 
-- `IMPLEMENTATION.md` - practical guide for generating tailored outputs from the hub
-- LLM + RAG integration - query your own data with a local, privacy-focused model to
-  generate tailored outputs, identify skill gaps, and build personal learning roadmaps
+- **n8n integration**: semi-automated output generation triggered from a simple form or command
+- **Local LLM + RAG**: query your own data with a privacy-focused local model to generate
+  tailored outputs, identify skill gaps, and build personal learning roadmaps
 
 ---
 

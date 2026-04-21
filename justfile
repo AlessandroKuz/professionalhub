@@ -45,8 +45,8 @@ upgrade:
 # ── Development Server ────────────────────────────────────────────────────────
 
 # Start the ASGI dev server via uvicorn (auto-reloads on file changes)
-run:
-    {{ run }} uvicorn config.asgi:application --reload \
+run-server:
+    {{ run }} uvicorn app:application --reload \
         --reload-include "*.html" \
         --reload-include "*.css" \
         --reload-include "*.scss" \
@@ -146,5 +146,4 @@ deploy: build
 clean:
     find . -type d -name __pycache__ -exec rm -rf {} +
     find . -name "*.pyc" -delete
-    find . -name "*.mo" -delete
     @echo "→ Workspace cleaned."

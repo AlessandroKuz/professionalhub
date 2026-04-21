@@ -81,18 +81,24 @@ templates, workflow guides, and implementation notes. This is the system itself.
 
 ```
 professionalhub/
-├── .python-version            # Python version pin (managed via uv)
-├── .pre-commit-config.yaml    # Pre-commit hooks (ruff lint, format, file checks)
-├── pyproject.toml             # Python dependencies (managed via uv)
-├── mkdocs.yml                 # MkDocs Material configuration
 ├── README.md                  # Friendly introduction and quick-start guide
 ├── CONTRIBUTING.md            # Notes on how to extend or adapt the system
-├── templates/
-│   └── PROFESSIONAL_HUB.md    # Blank fill-me template for the data repository
-└── docs/                      # MkDocs source - rendered as the documentation site
+├── mkdocs.yml                 # MkDocs Material configuration
+├── pyproject.toml             # Python dependencies (managed via uv)
+├── .pre-commit-config.yaml    # Pre-commit hooks (ruff lint, format, file checks)
+├── .python-version            # Python version pin (managed via uv)
+├── .github/
+│   └── workflows/
+│       └── docs.yml           # GitHub Actions: auto-deploy docs to GitHub Pages
+└── docs/                      # MkDocs source: dev/maintainer focused
     ├── index.md               # Documentation home page
-    ├── PROJECT_CONTEXT.md     # This document - theory and scope (rarely changes)
-    └── IMPLEMENTATION.md      # Tools, workflow, and output generation (changes more often)
+    ├── PROJECT_CONTEXT.md     # This document: theory and scope (rarely changes)
+    ├── IMPLEMENTATION.md      # Tools, workflow, and output generation (changes often)
+    ├── guides/
+    │   ├── COMPILATION_GUIDE.md   # How to fill in the hub, section by section
+    │   └── OUTPUT_GUIDE.md        # Prompt templates for generating tailored outputs
+    └── templates/
+        └── PROFESSIONAL_HUB.md   # Blank fill-me template for the data repository
 ```
 
 ### `professionaldata` (private)
@@ -287,7 +293,7 @@ well-populated and the structure is stable.
 ## 8. What This Document Is Not
 
 - It is not an implementation guide. Tool choices and workflow details are in `IMPLEMENTATION.md`.
-- It is not a template. The fillable document is `templates/PROFESSIONAL_HUB.md`.
+- It is not a template. The fillable document is `docs/templates/PROFESSIONAL_HUB.md`.
 - It is not a meant to be a public-facing document. It is written for the owner of the system and to whoever might be curious about the details.
 - It is not set in stone. New sections could be added the scope might slightly changed and so on.
 
@@ -298,3 +304,4 @@ well-populated and the structure is stable.
 | Version | Date | Change |
 |---|---|---|
 | 1.0 | 2026-04-20 | Initial document |
+| 1.1 | 2026-04-21 | Updated repo structure: guides and templates moved inside docs/ |
