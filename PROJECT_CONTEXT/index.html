@@ -18,6 +18,8 @@
         <link rel="prev" href="..">
       
       
+        <link rel="next" href="../IMPLEMENTATION/">
+      
       
         
       
@@ -286,6 +288,60 @@
     
       
       
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Documentation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
   
   
     
@@ -744,6 +800,184 @@
     </li>
   
 
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../IMPLEMENTATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Implementation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guides
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/COMPILATION_GUIDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Compilation Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/OUTPUT_GUIDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Output Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../templates/PROFESSIONAL_HUB.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Template
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
     
   </ul>
 </nav>
@@ -821,18 +1055,24 @@ empty what you don't, and fill in the gaps over time.</p>
 <p>The public repository contains everything that is not personal data: project documentation,
 templates, workflow guides, and implementation notes. This is the system itself.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>professionalhub/
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── .python-version            # Python version pin (managed via uv)
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>├── .pre-commit-config.yaml    # Pre-commit hooks (ruff lint, format, file checks)
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>├── pyproject.toml             # Python dependencies (managed via uv)
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>├── mkdocs.yml                 # MkDocs Material configuration
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>├── README.md                  # Friendly introduction and quick-start guide
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>├── CONTRIBUTING.md            # Notes on how to extend or adapt the system
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>├── templates/
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>│   └── PROFESSIONAL_HUB.md    # Blank fill-me template for the data repository
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>└── docs/                      # MkDocs source - rendered as the documentation site
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    ├── index.md               # Documentation home page
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    ├── PROJECT_CONTEXT.md     # This document - theory and scope (rarely changes)
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    └── IMPLEMENTATION.md      # Tools, workflow, and output generation (changes more often)
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── README.md                  # Friendly introduction and quick-start guide
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>├── CONTRIBUTING.md            # Notes on how to extend or adapt the system
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>├── mkdocs.yml                 # MkDocs Material configuration
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>├── pyproject.toml             # Python dependencies (managed via uv)
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>├── .pre-commit-config.yaml    # Pre-commit hooks (ruff lint, format, file checks)
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>├── .python-version            # Python version pin (managed via uv)
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>├── .github/
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>│   └── workflows/
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>│       └── docs.yml           # GitHub Actions: auto-deploy docs to GitHub Pages
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>└── docs/                      # MkDocs source: dev/maintainer focused
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    ├── index.md               # Documentation home page
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    ├── PROJECT_CONTEXT.md     # This document: theory and scope (rarely changes)
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    ├── IMPLEMENTATION.md      # Tools, workflow, and output generation (changes often)
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>    ├── guides/
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    │   ├── COMPILATION_GUIDE.md   # How to fill in the hub, section by section
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>    │   └── OUTPUT_GUIDE.md        # Prompt templates for generating tailored outputs
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>    └── templates/
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>        └── PROFESSIONAL_HUB.md   # Blank fill-me template for the data repository
 </code></pre></div>
 <h3 id="professionaldata-private"><code>professionaldata</code> (private)<a class="headerlink" href="#professionaldata-private" title="Permanent link">&para;</a></h3>
 <p>The private repository contains only your personal data. It mirrors the template from
@@ -1017,7 +1257,7 @@ well-populated and the structure is stable.</p>
 <h2 id="8-what-this-document-is-not">8. What This Document Is Not<a class="headerlink" href="#8-what-this-document-is-not" title="Permanent link">&para;</a></h2>
 <ul>
 <li>It is not an implementation guide. Tool choices and workflow details are in <code>IMPLEMENTATION.md</code>.</li>
-<li>It is not a template. The fillable document is <code>templates/PROFESSIONAL_HUB.md</code>.</li>
+<li>It is not a template. The fillable document is <code>docs/templates/PROFESSIONAL_HUB.md</code>.</li>
 <li>It is not a meant to be a public-facing document. It is written for the owner of the system and to whoever might be curious about the details.</li>
 <li>It is not set in stone. New sections could be added the scope might slightly changed and so on.</li>
 </ul>
@@ -1036,6 +1276,11 @@ well-populated and the structure is stable.</p>
 <td>1.0</td>
 <td>2026-04-20</td>
 <td>Initial document</td>
+</tr>
+<tr>
+<td>1.1</td>
+<td>2026-04-21</td>
+<td>Updated repo structure: guides and templates moved inside docs/</td>
 </tr>
 </tbody>
 </table>

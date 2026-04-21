@@ -2,10 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://alessandrokuz.github.io/professionalhub/</loc>
-         <lastmod>2026-04-20</lastmod>
+         <lastmod>2026-04-21</lastmod>
+    </url>
+    <url>
+         <loc>https://alessandrokuz.github.io/professionalhub/IMPLEMENTATION/</loc>
+         <lastmod>2026-04-21</lastmod>
     </url>
     <url>
          <loc>https://alessandrokuz.github.io/professionalhub/PROJECT_CONTEXT/</loc>
-         <lastmod>2026-04-20</lastmod>
+         <lastmod>2026-04-21</lastmod>
+    </url>
+    <url>
+         <loc>https://alessandrokuz.github.io/professionalhub/guides/COMPILATION_GUIDE/</loc>
+         <lastmod>2026-04-21</lastmod>
+    </url>
+    <url>
+         <loc>https://alessandrokuz.github.io/professionalhub/guides/OUTPUT_GUIDE/</loc>
+         <lastmod>2026-04-21</lastmod>
     </url>
 </urlset>
